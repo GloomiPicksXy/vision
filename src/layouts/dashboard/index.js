@@ -39,6 +39,7 @@ import colors from "assets/theme/base/colors";
 
 // Dashboard layout components
 import WelcomeMark from "layouts/dashboard/components/WelcomeMark";
+import Projects from "layouts/dashboard/components/Projects";
 import OrderOverview from "layouts/dashboard/components/OrderOverview";
 import SatisfactionRate from "layouts/dashboard/components/SatisfactionRate";
 import ReferralTracking from "layouts/dashboard/components/ReferralTracking";
@@ -72,7 +73,7 @@ function Dashboard() {
             <Grid item xs={12} md={6} xl={3}>
               <MiniStatisticsCard
                 title={{ text: "today's sale", fontWeight: "regular" }}
-                count="14,873 PHP"
+                count="₱14,873"
                 percentage={{ color: "success", text: "+3%" }}
                 icon={{ color: "info", component: <IoWallet size="22px" color="white" /> }}
               />
@@ -96,7 +97,7 @@ function Dashboard() {
             <Grid item xs={12} md={6} xl={3}>
               <MiniStatisticsCard
                 title={{ text: "total sales this month" }}
-                count="103,870 PHP"
+                count="₱132,983"
                 percentage={{ color: "success", text: "+5%" }}
                 icon={{ color: "info", component: <FaShoppingCart size="20px" color="white" /> }}
               />
